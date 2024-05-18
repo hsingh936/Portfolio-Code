@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Harsh Singh</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Harsh Singh</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+          <img src="./assets/profile-pic.png" alt="Harsh profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Harsh Singh</h1>
+          <p class="section__text__p2">Full Stack Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/Resume_Harsh_Singh')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/harsh-singh-7711411b7'"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/hsingh936'"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p> Bachelor of Technology (CSE) <br/>APJ Abdul Kalam Technical University (AKTU)</p>
+                <br/>
+                <p>Intermidiate (XII) <br/>Kautilya Senior Secondary School, CBSE</p>
+                <br/>
+                <p>High School (X) <br/>Kendriya Vidyalaya Barkuhi, CBSE</p>        
+              </div>
+
+              <div class="details-container">
+                <img
+                  src="./assets//acheivement.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Certificates</h3>
+                <p> Full Stack Web Development Internship  <br/>Cuvette Tech</p>
+                <br/>
+                <p>Salesforce Internship <br/>SmartInternz</p>
+                <br/>
+                <p>Python Internship <br/>Internshala</p>  
+                <br/>     
+                <p>AI/ML Internship <br/>All India Council for Technical Education (AICTE)</p>        
+              </div>
+
+              <div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Achievements</h3>
+                <p>Ranger(Trailhead)</p>
+                <br/>
+                <p>Code Gladiator Semi-Finalist(2023)</p>
+                <br/>
+                <p>Best Intern in Full Stack Web Development Internship</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#skills'"
+        />
+      </section>
+
+      <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="skills-sub-title">Frontend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets//html-icon.png"
+                    alt="HTML icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/css3.png"
+                    alt="CSS icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/js.png"
+                    alt="JS icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets//react.png"
+                    alt="React icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>React Js</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets//ui.png"
+                    alt="UI icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Material UI</h3>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="details-container">
+              <h2 class="skills-sub-title">Backend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/nodejs.png"
+                    alt="Node icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Node JS</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/express.png"
+                    alt="Express icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Express JS</h3>
+                  </div>
+                </article>
+                <article>
+                    <img
+                      src="./assets/mongo.png"
+                      alt="DB icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>MongoDB</h3>
+                    </div>
+                  </article>
+              </div>
+            </div>
+
+            <div class="details-container">
+                <h2 class="skills-sub-title">Machine Learning</h2>
+                <div class="article-container">
+                  <article>
+                    <img
+                      src="./assets/python.png"
+                      alt="Py icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Python</h3>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/tensor.png"
+                      alt="Tensor icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Tenserflow</h3>
+                    </div>
+                  </article>
+                  <article>
+                      <img
+                        src="./assets//jupyter.png"
+                        alt="JUP icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Jupyter</h3>
+                      </div>
+                    </article>
+                    <article>
+                        <img
+                          src="./assets//sklearn.png"
+                          alt="Sk icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Sk Learn Kit</h3>
+                        </div>
+                      </article>
+                </div>
+              </div>
+
+              <div class="details-container">
+                <h2 class="skills-sub-title">Additional Skills</h2>
+                <div class="article-container">
+                  <article>
+                    <img
+                      src="./assets//sales.png"
+                      alt="Sales icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Salesforce</h3>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/git.png"
+                      alt="Git icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>GIT</h3>
+                    </div>
+                  </article>
+                  <article>
+                      <img
+                        src="./assets/vercel.png"
+                        alt="Vercel icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Vercel</h3>
+                      </div>
+                    </article>
+                    <article>
+                        <img
+                          src="./assets/netlify.png"
+                          alt="Netlify icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Netlify</h3>
+                        </div>
+                      </article>
+                    </article>
+                    <article>
+                        <img
+                          src="./assets//render.png"
+                          alt="Render icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Render</h3>
+                        </div>
+                      </article>
+                    <article>
+                        <img
+                          src="./assets/vs.png"
+                          alt="Vs icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>VS Code</h3>
+                        </div>
+                      </article>
+                </div>
+              </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+      </section>
+
+      <section id="experience"> 
+        <p class="section__text__p1">My Previous</p>
+       <h1 class="title">Experience</h1>
+       <div class="experience-details-container">
+        <div class="prev-details-container">
+            <img src="./assets//cuvette.png" alt="" class="Cuvette">
+            <h3>Full Stack Web Developer Intern, Cuvette Tech</h3>
+            <p>Jul 2023 - Feb 2024</p>
+            <br/>
+            <p>I have independently completed multiple full-stack projects within set deadlines, earning
+                commendable scores for each. These projects,showcase my expertise in HTML, CSS, JavaScript, ReactJS, NodeJS, and MongoDB. 
+            </p>
+        </div>
+
+        <div class="prev-details-container">
+            <img src="./assets/smart.png" alt="" class="Internz">
+            <h3>Salesforce Developer Intern, SmartInternz</h3>
+            <p>Jul 2022 - Oct 2022</p>
+            <br/>
+            <p>Completed SmartInternz modules covering a range of topics, including Salesforce technology.</p>
+            <p>Achieved Trailhead-Ranker status and received certification for internship, demonstrating
+                proficiency in Salesforce through completion of badges on Trailhead and attainment of Ranger
+                rank.
+            </p>
+        </div>
+
+        <div class="prev-details-container">
+            <img src= "./assets/aicte.png" alt="" class="Aicte">
+            <h3>AI/ML Developer Intern, All India Council for Technical Education (AICTE)</h3>
+            <p>Feb 2022 - Apr 2022</p>
+            <br/>
+            <p>Acquired proficiency in machine learning methodologies and techniques during AI/ML internship.</p>
+            <p>Successfully applied machine learning algorithms to real-world datasets, demonstrating
+                practical knowledge and understanding in the field.
+            </p>
+        </div>
+       </div>
+       <img
+       src="./assets/arrow.png"
+       alt="Arrow icon"
+       class="icon arrow"
+       onclick="location.href='./#projects'"
+     /> 
+      </section>
+
+      <section id="projects">
+        <p class="section__text__p1">Browse My</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-details-container">
+          <div class="projects-about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/MusiCart.png"
+                  alt="MusiCart"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">MusiCart</h2>
+              <p>Developed a full-stack e-commerce platform specializing in headphones and earphones, enabling users to browse, purchase, and manage their orders. Implemented invoice management functionality, allowing users to view and download invoices for their purchases. Contributed to the project from conception to deployment, showcasing strong skills in web development and e-commerce solutions.</p>
+              <span>Skill Used : React Js, CSS, Node Js, Express Js, RestAPIs, MongoDB, GIT, Vercel and Render</span>
+              <br/>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/hsingh936/hs8827884001-gmail.com_cuvette_final_evalution_july'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://musicart-mern.vercel.app/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/Pro.png"
+                  alt="ProManage"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">ProManage</h2>
+              <p>ProManage is project management tool that helps individuals and teams organize tasks, projects, and workflows in a visual and flexible way. The main purpose of ProManage is to provide a digital platform where users can create boards, lists, and cards to manage their tasks and projects effectively.</p>
+              <span>Skill Used : React Js, CSS, Node Js, Express Js, RestAPIs, MongoDB, GIT, Vercel and Render</span>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/hsingh936/hs8827884001-gmail.com_cuvette_final_evalution_2_july'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://promanage-nine.vercel.app/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/Quiz.png"
+                  alt="Quizzie"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Quizzie</h2>
+              <p>Quiz web app that allows users to create, edit, share, and participate in quizzes while providing quiz creators with insights into participant performance and engagement.</p>
+              <span>Skill Used : React Js, CSS, Node Js, Express Js, RestAPIs, MongoDB, GIT, Vercel and Render</span>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/hsingh936/hs8827884001-gmail.com_cuvette_final_evalution_ju-y'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://mernquizzieapp.vercel.app/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/Super.png"
+                    alt="Super App"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Super App</h2>
+                <p>With SuperApp, users can login to a personalized experience, selecting movie genres tailored to their taste. The profile page offers easy access to user details and a notes section for productivity, alongside features like a stopwatch for time management and real-time weather updates. Stay informed with the latest news and effortlessly discover new movies based on your preferences. SuperApp revolutionizes entertainment, putting everything you need at your fingertips.</p>
+                <span>Skill Used : React Js, CSS, Local Storage and Web APIs</span>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/hsingh936/CuvetteCapstoneProject'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://glowing-sherbet-040d5b.netlify.app/'"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/notes.png"
+                    alt="Pocket Notes"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Pocket Notes</h2>
+                <p>A lightweight note-taking web app built with React and local storage integration. Create custom groups, jot down notes, and stay organized effortlessly.</p>
+                <span>Skill Used : React Js, CSS and Local Storage</span>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/hsingh936/CuvetteReactMajorProject'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://ornate-parfait-f31a6b.netlify.app/'"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/RockPaperScissors.png"
+                    alt="Rock Paper Scissors"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Rock Paper Scissors</h2>
+                <p>Rock Paper Scissors: a dynamic web-based game crafted with HTML, CSS, and JavaScript. Pit your wits against the computer in this timeless battle, where each victory is stored locally, tracking your progress over time.</p>
+                <span>Skill Used : HTML, CSS, JavaScript and Local Storage</span>
+
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/hsingh936/CuvetteEvaluationProject1'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://hsingh936.github.io/CuvetteEvaluationProject1/'"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="@gmail.com">harsh.5ingh041100@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/harsh-singh-7711411b7/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Harsh Singh. All Rights Reserved.</p>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>
